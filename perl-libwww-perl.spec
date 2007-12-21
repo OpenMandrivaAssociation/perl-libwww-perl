@@ -14,6 +14,7 @@ BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-URI
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 %{module} module for perl
