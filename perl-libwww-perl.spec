@@ -5,7 +5,7 @@
 Summary:	Libwww-perl module for perl
 Name:		perl-%{module}
 Version:	5.808
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://www.cpan.org
