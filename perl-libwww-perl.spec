@@ -2,22 +2,26 @@
 
 %define	module	libwww-perl
 
-Summary:	Libwww-perl module for perl
+Summary:	The World-Wide Web library for Perl
 Name:		perl-%{module}
-Version:	5.811
+Version:	5.812
 Release:	%mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
-URL:		http://www.cpan.org
-Source0:	%{module}-%{version}.tar.bz2
+URL:		http://search.cpan.org/dist/%{module}
+Source:     http://www.cpan.org/modules/by-module/WWW/%{module}-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-URI
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
-%{module} module for perl
+The libwww-perl collection is a set of Perl modules which provides a simple and
+consistent application programming interface (API) to the World-Wide Web. The
+main focus of the library is to provide classes and functions that allow you to
+write WWW clients. The library also contain modules that are of more general
+use and even classes that help you implement simple HTTP servers.
 
 %prep
 
