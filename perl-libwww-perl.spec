@@ -5,7 +5,7 @@
 Summary:	The World-Wide Web library for Perl
 Name:		perl-%{module}
 Version:	5.814
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
@@ -28,7 +28,7 @@ use and even classes that help you implement simple HTTP servers.
 %setup -q -n %{module}-%{version}
 
 %build
-/usr/bin/yes | %{__perl} Makefile.PL INSTALLDIRS=vendor
+/usr/bin/yes | %{__perl} Makefile.PL --aliases INSTALLDIRS=vendor
 %make
 
 %install
