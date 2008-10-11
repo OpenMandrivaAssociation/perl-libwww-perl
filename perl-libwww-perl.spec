@@ -4,8 +4,8 @@
 
 Summary:	The World-Wide Web library for Perl
 Name:		perl-%{module}
-Version:	5.814
-Release:	%mkrel 2
+Version:	5.816
+Release:	%mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
