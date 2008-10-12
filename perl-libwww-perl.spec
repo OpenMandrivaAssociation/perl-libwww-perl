@@ -4,7 +4,7 @@
 
 Summary:	The World-Wide Web library for Perl
 Name:		perl-%{module}
-Version:	5.816
+Version:	5.817
 Release:	%mkrel 1
 License:	GPL or Artistic
 Group:		Development/Perl
