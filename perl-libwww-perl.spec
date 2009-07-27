@@ -1,20 +1,22 @@
+%define	upstream_name	 libwww-perl
+%define	upstream_version 5.830
+
 %define	_requires_exceptions Authen::NTLM\\|HTTP::GHTTP\\|Win32
 
-%define	module	libwww-perl
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
 
 Summary:	The World-Wide Web library for Perl
-Name:		perl-%{module}
-Version:	5.829
-Release:	%mkrel 1
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/WWW/%{module}-%{version}.tar.gz
-BuildRequires:	perl-devel
+URL:		http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/WWW/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl-HTML-Parser
 BuildRequires:	perl-URI
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 The libwww-perl collection is a set of Perl modules which provides a simple and
@@ -25,7 +27,7 @@ use and even classes that help you implement simple HTTP servers.
 
 %prep
 
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 /usr/bin/yes | %{__perl} Makefile.PL --aliases INSTALLDIRS=vendor
