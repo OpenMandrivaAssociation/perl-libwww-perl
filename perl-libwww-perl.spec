@@ -1,5 +1,5 @@
 %define	upstream_name	 libwww-perl
-%define	upstream_version 5.830
+%define	upstream_version 5.831
 
 %define	_requires_exceptions Authen::NTLM\\|HTTP::GHTTP\\|Win32
 
