@@ -1,5 +1,5 @@
 %define	upstream_name	 libwww-perl
-%define	upstream_version 5.833
+%define upstream_version 5.834
 
 %define	_requires_exceptions Authen::NTLM\\|HTTP::GHTTP\\|Win32
 
@@ -13,8 +13,9 @@ Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/WWW/%{upstream_name}-%{upstream_version}.tar.gz
 
-BuildRequires:	perl-HTML-Parser
-BuildRequires:	perl-URI
+BuildRequires:	perl(HTML::Parser)
+BuildRequires:	perl(URI)
+
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
