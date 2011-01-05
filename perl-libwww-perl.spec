@@ -1,11 +1,11 @@
 %define	upstream_name	 libwww-perl
-%define upstream_version 5.836
+%define upstream_version 5.837
 
 %define	_requires_exceptions Authen::NTLM\\|HTTP::GHTTP\\|Win32
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 2
+Release:	%mkrel 1
 
 Summary:	The World-Wide Web library for Perl
 License:	GPL+ or Artistic
