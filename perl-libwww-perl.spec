@@ -1,21 +1,20 @@
 %define	upstream_name	 libwww-perl
-%define upstream_version 5.837
+%define upstream_version 6.02
 
 %define	_requires_exceptions Authen::NTLM\\|HTTP::GHTTP\\|Win32
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 2
+Release:	%mkrel 1
 
 Summary:	The World-Wide Web library for Perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/WWW/%{upstream_name}-%{upstream_version}.tar.gz
-
+BuildRequires:	perl(Encode::Locale)
 BuildRequires:	perl(HTML::Parser)
 BuildRequires:	perl(URI)
-
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
@@ -27,7 +26,6 @@ write WWW clients. The library also contain modules that are of more general
 use and even classes that help you implement simple HTTP servers.
 
 %prep
-
 %setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
@@ -36,8 +34,10 @@ use and even classes that help you implement simple HTTP servers.
 
 %install
 rm -rf %{buildroot}
-
 %makeinstall_std
+
+%check
+%make test
 
 %clean 
 rm -rf %{buildroot}
