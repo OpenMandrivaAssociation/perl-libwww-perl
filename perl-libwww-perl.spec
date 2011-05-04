@@ -15,12 +15,14 @@ Source0:    http://www.cpan.org/modules/by-module/WWW/%{upstream_name}-%{upstrea
 BuildRequires:	perl(Encode::Locale)
 BuildRequires:	perl(File::Listing)
 BuildRequires:	perl(HTML::Parser)
-BuildRequires:	perl(HTTP::Message)
 BuildRequires:	perl(HTTP::Cookies)
 BuildRequires:	perl(HTTP::Daemon)
+BuildRequires:	perl(HTTP::Message)
+BuildRequires:	perl(HTTP::Negociate)
 BuildRequires:	perl(LWP::MediaTypes)
 BuildRequires:	perl(Net::HTTP)
 BuildRequires:	perl(URI)
+BuildRequires:	perl(WWW::RobotRules)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
