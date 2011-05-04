@@ -13,7 +13,13 @@ Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/WWW/%{upstream_name}-%{upstream_version}.tar.gz
 BuildRequires:	perl(Encode::Locale)
+BuildRequires:	perl(File::Listing)
 BuildRequires:	perl(HTML::Parser)
+BuildRequires:	perl(HTTP::Message)
+BuildRequires:	perl(HTTP::Cookies)
+BuildRequires:	perl(HTTP::Daemon)
+BuildRequires:	perl(LWP::MediaTypes)
+BuildRequires:	perl(Net::HTTP)
 BuildRequires:	perl(URI)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
