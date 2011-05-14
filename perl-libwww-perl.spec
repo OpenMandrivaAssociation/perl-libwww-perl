@@ -5,8 +5,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 2
-
+Release:	%mkrel 3
 Summary:	The World-Wide Web library for Perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
@@ -24,6 +23,7 @@ BuildRequires:	perl(Net::HTTP)
 BuildRequires:	perl(URI)
 BuildRequires:	perl(WWW::RobotRules)
 Requires:       perl(Net::HTTP)
+Requires:       perl(HTTP::Cookies)
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
