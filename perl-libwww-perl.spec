@@ -1,5 +1,5 @@
 %define modname	libwww-perl
-%define modver 6.06
+%define modver 6.07
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Authen::NTLM\\)|perl\\(HTTP::GHTTP\\)'
@@ -11,7 +11,7 @@ Summary:	The World-Wide Web library for Perl
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	3
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:	http://search.cpan.org/dist/%{modname}
@@ -71,6 +71,3 @@ use and even classes that help you implement simple HTTP servers.
 %{perl_vendorlib}/*
 %{_mandir}/man1/*
 %{_mandir}/man3/*
-
-
-
