@@ -1,5 +1,5 @@
 %define modname	libwww-perl
-%define modver 6.07
+%define modver 6.08
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Authen::NTLM\\)|perl\\(HTTP::GHTTP\\)'
