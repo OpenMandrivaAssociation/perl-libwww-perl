@@ -1,11 +1,7 @@
 %define modname	libwww-perl
 %define modver 6.33
 
-%if %{_use_internal_dependency_generator}
-%define __noautoreq 'perl\\(Authen::NTLM\\)|perl\\(HTTP::GHTTP\\)'
-%else
-%define _requires_exceptions Authen::NTLM\\|HTTP::GHTTP\\|Win32
-%endif
+%define __requires_exclude ^perl\\(Authen::NTLM\\)|perl\\(HTTP::GHTTP\\)$
 
 Summary:	The World-Wide Web library for Perl
 
