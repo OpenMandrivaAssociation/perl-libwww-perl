@@ -1,5 +1,5 @@
 %define modname	libwww-perl
-%define modver 6.33
+%define modver 6.36
 
 %define __requires_exclude ^perl\\(Authen::NTLM\\)|perl\\(HTTP::GHTTP\\)$
 
@@ -7,11 +7,11 @@ Summary:	The World-Wide Web library for Perl
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	7
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://search.cpan.org/CPAN/authors/id/O/OA/OALDERS/libwww-perl-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/WWW/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Digest::MD5)
 BuildRequires:	perl(Encode) >= 2.120.0
@@ -52,7 +52,7 @@ use and even classes that help you implement simple HTTP servers.
 %setup -qn %{modname}-%{modver}
 
 %build
-/usr/bin/yes | %__perl Makefile.PL --aliases INSTALLDIRS=vendor
+/usr/bin/yes | perl Makefile.PL --aliases INSTALLDIRS=vendor
 %make
 
 %install

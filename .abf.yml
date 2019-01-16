@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   libwww-perl-6.33.tar.gz: 915f4afeb91269aea3476e408a3af7904c5361e4
+sources:
+  libwww-perl-6.36.tar.gz: c91d2a1271741fed97ea6f504df4950f818b0a0d
