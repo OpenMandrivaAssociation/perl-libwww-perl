@@ -32,6 +32,7 @@ BuildRequires:	perl(IO::Select)
 BuildRequires:	perl(IO::Socket)
 BuildRequires:	perl(LWP::MediaTypes) >= 6.0.0
 BuildRequires:	perl(MIME::Base64) >= 2.100.0
+BuildRequires:  perl-CPAN-Meta-Requirements
 BuildRequires:	perl(Net::FTP) >= 2.580.0
 BuildRequires:	perl(Net::HTTP) >= 6.0.0
 BuildRequires:	perl(URI) >= 1.100.0
