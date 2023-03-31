@@ -7,7 +7,7 @@ Summary:	The World-Wide Web library for Perl
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	1
+Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://metacpan.org/dist/libwww-perl
