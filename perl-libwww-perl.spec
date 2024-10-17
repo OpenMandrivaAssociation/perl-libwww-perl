@@ -9,7 +9,7 @@ Version:	6.71
 Release:	2
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/dist/libwww-perl
+Url:		https://metacpan.org/dist/libwww-perl
 Source0:	http://search.cpan.org/CPAN/authors/id/O/OA/OALDERS/libwww-perl-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl(Digest::MD5)
