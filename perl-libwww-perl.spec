@@ -5,8 +5,8 @@
 Summary:	The World-Wide Web library for Perl
 
 Name:		perl-%{modname}
-Version:	6.71
-Release:	2
+Version:	6.77
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/libwww-perl
@@ -23,10 +23,10 @@ BuildRequires:	perl(HTTP::Cookies) >= 6.0.0
 BuildRequires:	perl(HTTP::Daemon) >= 6.0.0
 BuildRequires:	perl(HTTP::Date) >= 6.0.0
 BuildRequires:	perl(HTTP::Negotiate) >= 6.0.0
-BuildRequires:	perl(HTTP::Request) >= 6.0.0
+BuildRequires:	perl(HTTP::Request) >= v6.0.0
 BuildRequires:	perl(HTTP::Request::Common) >= 6.0.0
-BuildRequires:	perl(HTTP::Response) >= 6.0.0
-BuildRequires:	perl(HTTP::Status) >= 6.0.0
+BuildRequires:	perl(HTTP::Response) >= v6.0.0
+BuildRequires:	perl(HTTP::Status) >= v6.0.0
 BuildRequires:	perl(IO::Select)
 BuildRequires:	perl(IO::Socket)
 BuildRequires:	perl(LWP::MediaTypes) >= 6.0.0
