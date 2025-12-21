@@ -12,6 +12,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/dist/libwww-perl
 Source0:	http://search.cpan.org/CPAN/authors/id/O/OA/OALDERS/libwww-perl-%{version}.tar.gz
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl(Digest::MD5)
 BuildRequires:	perl(Encode) >= 2.120.0
 BuildRequires:	perl(Encode::Locale)
