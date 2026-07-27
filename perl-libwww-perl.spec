@@ -5,7 +5,7 @@
 Summary:	The World-Wide Web library for Perl
 
 Name:		perl-%{modname}
-Version:	6.77
+Version:	6.83
 Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
